@@ -9,5 +9,5 @@ This simple page uses Github APIs and the Mustache.js template system to create 
 ## Technologies used
 * Javascript & JQuery
 * API
-* Mustache.js
+* [Mustache.js](http://mustache.github.io/)
 * HTML & CSS
