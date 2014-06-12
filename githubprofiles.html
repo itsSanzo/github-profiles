@@ -2,10 +2,13 @@
 <html>
   <head>
     <title>Github profiles</title>
-    <link href="github.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800,600' rel='stylesheet' type='text/css'>
+    <link href="githubprofiles.css" rel="stylesheet">
   </head>
 
   <body>
+
+    <div id="container">
 
     <form id="add-profile">
       <input id="username" autocorrect="off" spellcheck="false" autocomplete="off" placeholder="Enter a Github username">
@@ -31,8 +34,10 @@
           <h4>Repos: {{ public_repos }}</h4>
           <h4>Followers: {{ followers }}</h4>
         </div>
+        <div class="clearfix">
       </div>
     </template>
+    </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
@@ -47,7 +52,7 @@
           $.get('https://api.github.com/users/' + usernameEntered , function(user) {
             var newProfile = Mustache.render($('#profile-template').html(), user);
 
-            $('.profile-container').append(newProfile);
+            $('.profile-container').prepend(newProfile);
           })
         })
 

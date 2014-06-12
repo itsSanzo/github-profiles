@@ -1,0 +1,68 @@
+body {
+  background: url(images/sativa.png);
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+
+#container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+#add-profile {
+  margin: 20px auto ;
+  text-align: center;
+}
+
+.clearfix {
+  clear: both;
+}
+
+input, button {
+  font-size: 20px;
+  padding: 5px;
+}
+
+input {
+  width: 500px;
+}
+
+.profile {
+  background: rgba(10,10,10,0.7);
+  width: 650px;
+  padding: 20px;
+  border-radius: 5px;
+  color: #ffffff;
+  margin: 0 auto 20px auto;
+  font-weight: 300;
+}
+
+.profile a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 26px;
+}
+
+.profile .left {
+  width: 150px;
+  float: left;
+}
+
+.profile .left img {
+  border-radius: 100%;
+  border: 5px solid #ffffff;
+  box-shadow: 2px 2px 5px #333333;
+}
+
+.profile .right {
+  width: 350px;
+  float: left;
+  padding: 0 30px;
+}
+
+.profile .right h3 {
+  margin-top: 0;
+}
+.profile img {
+  width: 100%;
+}
